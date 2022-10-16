@@ -1,6 +1,5 @@
 #first stage
 #load data and process it 
-from lib2to3.pgen2.pgen import DFAState
 import os
 import yaml
 import pandas as pd
@@ -20,7 +19,7 @@ def get_data(config_path):
     #read
     df=pd.read_csv(data_path,sep=",",encoding='utf-8')
     return df
-#hello
+
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
