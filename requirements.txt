@@ -10,6 +10,6 @@ pytest
 tox
 flake8
 flask
-
+gunicorn==20.0.4
 
 
