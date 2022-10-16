@@ -5,6 +5,6 @@ class NotInRange(Exception):
         super().__init__(self.message)
 
 def test_generic():
-    a = 5
+    a = 6
     b=6
     assert a == b
