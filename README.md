@@ -1,42 +1,70 @@
-created environment
-'''
-conda create -n wine27 python=3.9 -y
-'''
+create env 
+
+```bash
+conda create -n wineq python=3.9 -y
+```
 
 activate env
-'''
-conda activate wine27
-'''
+```bash
+conda activate wineq
+```
 
-created requirments.txt and installed it
-'''
+created a req file
+
+install the req
+```bash
 pip install -r requirements.txt
-'''
-create template.py
-write code to create directories and files
+```
+download the data from 
 
-create another directory for the given data and paste the csv file
-'''
-mkdir data_given
-'''
+https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
 
-initialize git and dv
-'''
+```bash
 git init
-dvc init
-'''
-
-add given data to dvc to track
-'''
-dvc add data_given\winequality.csv
-'''
-
-'''
+```
+```bash
+dvc init 
+```
+```bash
+dvc add data_given/winequality.csv
+```
+```bash
 git add .
-
+```
+```bash
 git commit -m "first commit"
-'''
+```
 
+oneliner updates  for readme
+
+```bash
+git add . && git commit -m "update Readme.md"
+```
+```bash
 git remote add origin https://github.com/Agasthya23/dvc-practise9.git
 git branch -M main
 git push origin main
+```
+
+tox command -
+```bash
+tox
+```
+for rebuilding -
+```bash
+tox -r 
+```
+pytest command
+```bash
+pytest -v
+```
+
+setup commands -
+```bash
+pip install -e . 
+```
+
+build your own package commands- 
+```bash
+python setup.py sdist bdist_wheel
+```
